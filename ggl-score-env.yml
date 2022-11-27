@@ -1,0 +1,27 @@
+name: ggl-score-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - scipy
+  - tqdm
+  - matplotlib
+  - seaborn
+  - pandas
+  - biopandas
+  - rdkit
+  - scikit-learn
+  
+  # Jupyter Environment
+  - papermill
+  - autopep8
+  - jupyterlab
+  - notebook
+  - ipython
+  - jupyter_contrib_nbextensions
+  - nbclean
+  - nbresuse
