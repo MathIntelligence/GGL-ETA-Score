@@ -25,14 +25,14 @@ from ggl_score import *
 
 class GeometricGraphLearningFeatures:
 
-    df_kernels = pd.read_csv('../kernels/kernels.csv')
+    df_kernels = pd.read_csv('../utils/kernels.csv')
 
     def __init__(self, args):
         """
         Parameters
         ----------
         kernel_index: int
-            row index in kernels/kernels.csv
+            row index in utils/kernels.csv
         cutoff: float
             distance cutoff to define binding site
         path_to_csv: str
