@@ -164,8 +164,6 @@ class SYBYL_GGL:
                      .join(mwcg_temp_grouped.agg({'MWCG_DISTANCE': 'min'}).rename(columns={'MWCG_DISTANCE': 'MIN'}))
                      .join(mwcg_temp_grouped.agg({'MWCG_DISTANCE': 'max'}).rename(columns={'MWCG_DISTANCE': 'MAX'}))
                      )
-        # Notice: ATOM_PAIR in ri_score_temp only consists of existing pairwise protein ligand atoms in the working molecule
-        # We here initial ri_score with ATOM_PAIR consisting of all pairs in protein_ligand_atom_types
         mwcg_columns = {'ATOM_PAIR': self.protein_ligand_atom_types}
         for _f in features:
             mwcg_columns[_f] = np.zeros(len(self.protein_ligand_atom_types))
