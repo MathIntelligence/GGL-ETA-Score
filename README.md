@@ -7,7 +7,7 @@ This code compute features for both the SYBYL-GGL and ECIF-GGL models. The folde
 - SciPy
 - Pandas
 - Biopandas
-- RdKit
+- RDKit
 
 Run the following command to install the necessary packages and create an conda environmet from the provided `ggl-score-env.yml` file. 
 ```shell
