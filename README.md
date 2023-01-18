@@ -9,13 +9,13 @@ This code compute features for both the SYBYL-GGL and ECIF-GGL models. The folde
 - BioPandas
 - RDKit
 
-Run the following command to install the necessary packages and create an conda environmet from the provided `ggl-score-env.yml` file. 
+Run the following command to install the necessary packages and create a conda environmet from the provided `ggl-score-env.yml` file. 
 ```shell
 conda env create -f ggl-score-env.yml
 ```
 
 ## Simple Example
-Assume we want to genrate the features for the PDBbind v2016 general set for both SYBYL GGL and ECIF GGL with exponential kernel type and parameters $\kappa=2.5$ and $\tau=1.5$ which is the index 84 of the `kernels.csv` file in the `utils` folder. Assume also the structes of the dataset are in the directory `../PDBbind_v2016_general_Set` and we wish to save the features in the directory `../Features`.
+Assume we want to genrate the features for the PDBbind v2016 general set for both SYBYL GGL and ECIF GGL with exponential kernel type and parameters $\kappa=2.5$ and $\tau=1.5$ which is the index 84 of the `kernels.csv` file in the `utils` folder. Assume also the structures of the dataset are in the directory `../PDBbind_v2016_general_Set` and we wish to save the features in the directory `../Features`.
 
 ```shell
 # Generate the SYBYL GGL features
